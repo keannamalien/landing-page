@@ -1,0 +1,216 @@
+
+/*--------------------------------------------------------------
+>>> TABLE OF CONTENTS:
+----------------------------------------------------------------
+# Generic (CALLED IN NORMALIZE.CSS)
+	- Normalize
+	- Box sizing
+	- Media width
+# Base
+	- Typography
+	- Elements
+	- Links
+# Components
+	- Header
+	- Main
+	- Footer
+--------------------------------------------------------------*/
+body {
+    background-color: #EDEDED;
+    font-family: "Inter Tight", sans-serif;
+    color: #4A4A4A;
+    font-optical-sizing: auto;
+    line-height: 1.5;
+}
+
+/* TYPOGRAPHY 
+----------------------------- */
+
+h1 {
+    color: #AF4912;
+    margin-bottom: 0;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+.h1-caption {
+    margin-top: 0;
+    margin-bottom: 0rem;
+    font-size: 1.3rem;
+}
+
+p {
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+}
+
+@media (min-width: 43.75rem) {
+    h1 {
+        font-size: 5rem;
+    }
+    .h1-caption {
+        font-size: 2.5rem;
+    }
+    
+    p {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
+
+/* ELEMENTS 
+------------------------------*/
+
+
+/* LINKS 
+------------------------------*/
+a {
+    text-decoration: none;
+    color: #4A4A4A;
+}
+
+/*--------------------------------------------------------------
+# Components
+--------------------------------------------------------------*/
+
+/* Site Header */
+.site-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0.5rem;
+
+}
+
+.logo {
+    text-decoration: none;
+    color: #4A4A4A;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+
+.nav-header ul {
+    display: flex;
+    gap: 0.5rem; 
+    margin-right: 1rem;
+
+} 
+
+.nav-header li {
+    display: inline-block;
+    font-size: 1rem;
+}
+
+
+
+
+.page-header {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    
+}
+
+.header-name {
+    text-align: center;
+}
+
+.page-header img {
+    display: block;
+    border-radius: 15%;
+    max-width: 60%;
+}
+.skill {
+    margin-top: 0.5rem;
+    padding: 0 3rem
+}
+
+.skill li {
+    display: inline-block;
+    padding: .0625rem 0.6rem;
+    margin: .0938rem 0;
+    border:solid #817f7f;
+    border-width: .0938rem;
+    border-radius: 2.5rem;
+    font-size: 1rem;
+}
+
+@media (min-width: 43.75em) {
+
+    .page-header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 5rem;
+
+    }
+    .page-header img {
+        max-height: 20rem;
+    }
+
+    .header-name {
+        text-align: left;
+    }
+    
+    .skill ul {
+        padding: 0;
+        text-align:left;
+    }
+
+}
+
+ 
+
+.section-about {
+    padding: 0 2rem;
+}
+.section-about h2 {
+    text-align: center;
+}
+
+.project {
+    background-color: #d3d1d1;
+    padding: 1rem;
+    border-radius: 2rem;
+    margin: 0.7rem 2rem;
+    width: fit-content;
+
+}
+.section-projects h2 {
+    text-align: center;
+}
+
+.project-image {
+    border-radius: 1rem;
+}
+
+.project-title {
+    display: inline;
+}
+.project-link {
+    display: inline-block;
+    padding: .0625rem 0.8rem;
+    margin: .0938rem 0;
+    border:solid #817f7f;
+    border-width: .0938rem;
+    border-radius: 2.5rem;
+    background-color: #4A4A4A;
+    color: #d1cfcf;
+    font-size: 1.3rem;
+    line-height: 1.3rem;
+}
+
+
+
+
+
+
+
+
+
+
+
