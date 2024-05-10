@@ -15,6 +15,10 @@
 	- Main
 	- Footer
 --------------------------------------------------------------*/
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #EDEDED;
     font-family: "Inter Tight", sans-serif;
@@ -88,23 +92,50 @@ a {
     color: #4A4A4A;
 }
 
+
+
 /* 
 a,
 a:visited { 
 	color: 
 	text-decoration: 
-}
+/* } */
 
-a:hover,
-a:focus,
-a:active {
-	text-decoration: 
+.logo:hover {
+    color: #AF4912;
+}
+.nav-header li:hover,
+.nav-header li:active {
+	color: #4A4A4A;
+    border: solid #D3D3D3;
+    background-color: #D3D3D3;
+    border-radius: 2.5rem;
+    padding: 0 0.5rem;
 }
 
 a:focus {
-	outline: 
+	outline: solid #AF4912;
+    outline-width: 0.2rem;
 }
-*/
+
+.project-link:hover,
+.project-link:active {
+    border: solid #4A4A4A;
+    border-width: .0938rem;
+    border-radius: 2.5rem;
+    background-color: #EDEDED;
+    color: #4A4A4A;
+}
+
+.social-link:hover,
+.social-link:active {
+    border:solid #4A4A4A;
+    background-color: #4A4A4A;
+    color: #EDEDED;
+    border-radius: 2.5rem;
+}
+
+
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
@@ -142,9 +173,10 @@ a:focus {
 
 @media (min-width: 43.75em) {
 
-    /* .site-header{
-        /* margin: 0 auto;
-    }  */
+    .logo {
+        font-size: 3rem;
+        margin-left: 1rem;
+    }
 
     .nav-header ul {
         gap: 2rem; 
@@ -159,8 +191,6 @@ a:focus {
 }
 
 .page-header {
-    /* display: flex;
-    flex-direction: column; REMOVE THIS!!!!*/ 
     margin: 0 auto;
     align-items: center;
     
@@ -272,9 +302,9 @@ a:focus {
 }
 .project-link {
     display: inline-block;
-    padding: .0625rem 0.5rem;
+    padding: .0625rem 1rem;
     margin: .0938rem 0;
-    border:solid #817f7f;
+    border:solid #4a4a4a;
     border-width: .0938rem;
     border-radius: 2.5rem;
     background-color: #4A4A4A;
@@ -303,22 +333,18 @@ a:focus {
 
     
 
-
-
-
 .contact-btn {
     align-items: center;
     padding-left: 0;
 } 
 
-.contact-btn li {
+.social-link {
     display: inline-block;
     padding: .0625rem 0.6rem;
     margin: .0938rem 0;
     font-size: 1.2rem;
     border:solid #4A4A4A;
-    background-color: #4A4A4A;
-    color: #EDEDED;
+    color: #4A4A4A;
     border-radius: 2.5rem;
 }
 
