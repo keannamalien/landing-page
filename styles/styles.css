@@ -46,11 +46,11 @@ p {
 
 @media (min-width: 43.75rem) {
     h1 {
-        font-size: 5rem;
-        margin-bottom: 2rem;
+        font-size: 2.5rem;
+        /* margin-bottom: 2rem; */
     }
     .h1-caption {
-        font-size: 2.5rem;
+        font-size: 1.8rem;
     }
     
     p {
@@ -61,6 +61,20 @@ p {
     h2 {
         font-size: 3rem;
     }
+
+@media (min-width: 62.5rem) {
+    h1 {
+        font-size: 5rem;
+        margin-bottom: 2rem;
+
+    }
+
+    .h1-caption {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+
+}
 }
 
 /* ELEMENTS 
@@ -128,7 +142,9 @@ a:focus {
 
 @media (min-width: 43.75em) {
 
-    
+    /* .site-header{
+        /* margin: 0 auto;
+    }  */
 
     .nav-header ul {
         gap: 2rem; 
@@ -143,8 +159,8 @@ a:focus {
 }
 
 .page-header {
-    display: flex;
-    flex-direction: column;
+    /* display: flex;
+    flex-direction: column; REMOVE THIS!!!!*/ 
     margin: 0 auto;
     align-items: center;
     
@@ -158,6 +174,7 @@ a:focus {
     display: block;
     border-radius: 15%;
     max-width: 60%;
+    margin: 0 auto;
 }
 .skill {
     margin-top: 0.5rem;
@@ -181,23 +198,39 @@ a:focus {
     .page-header {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        gap: 5rem;
-        margin: 8rem 5rem 8rem 5rem;
+        justify-content: space-evenly;
+        /* gap: 5rem; */
+        /* margin: 10rem 5rem 15rem 5rem; */
+        margin: 5rem auto;
+        padding: 1rem;
 
     }
     .page-header img {
-        max-height: 30rem;
+        max-height: 25rem;
+        margin: 0;
     }
 
     .header-name {
         text-align: left;
     }
     
-    .skill ul {
+    .skill {
         padding: 0;
-        /* text-align:left; */
     }
+    /* .skill ul {
+        text-align:left;
+    } */
+
+@media (min-width: 62.5rem) {
+    
+    .page-header {
+        padding: 0;
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        /* gap: 8rem; */ 
+        /* test gap later */
+    }
+}
 
 }
 
@@ -222,7 +255,7 @@ a:focus {
     background-color: #d3d3d3;
     padding: 1rem;
     border-radius: 2rem;
-    margin: 0.7rem 2rem;
+    margin: 1rem 1rem;
     width: fit-content;
 
 }
@@ -253,9 +286,13 @@ a:focus {
 @media (min-width: 43.75em) {
     .projects-wrapper {
         display: flex;
-        flex: wrap;
+        flex-wrap: wrap;
         justify-content: center;
     }
+    .project {
+        max-width: 35%;
+    }
+
 }
 
 .section-contact {
@@ -269,7 +306,7 @@ a:focus {
 
 
 
-.contact-btn ul {
+.contact-btn {
     align-items: center;
     padding-left: 0;
 } 
