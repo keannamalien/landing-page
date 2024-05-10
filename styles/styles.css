@@ -104,7 +104,7 @@ a:visited {
 .logo:hover {
     color: #AF4912;
 }
-.nav-header li:hover,
+.nav-header li:hover , 
 .nav-header li:active {
 	color: #4A4A4A;
     border: solid #D3D3D3;
@@ -118,6 +118,10 @@ a:focus {
     outline-width: 0.2rem;
 }
 
+a:active {
+    outline: none;
+}
+
 .project-link:hover,
 .project-link:active {
     border: solid #4A4A4A;
@@ -125,6 +129,7 @@ a:focus {
     border-radius: 2.5rem;
     background-color: #EDEDED;
     color: #4A4A4A;
+    outline: none;
 }
 
 .social-link:hover,
@@ -133,6 +138,7 @@ a:focus {
     background-color: #4A4A4A;
     color: #EDEDED;
     border-radius: 2.5rem;
+    outline: none;
 }
 
 
@@ -327,8 +333,7 @@ a:focus {
 
 .section-contact {
     text-align: center;
-    display: flex;
-    flex-direction: column;
+    margin-top: 5rem;
 }
 
     
@@ -336,6 +341,11 @@ a:focus {
 .contact-btn {
     align-items: center;
     padding-left: 0;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    list-style-type: none;
+    gap: 1rem;
 } 
 
 .social-link {
