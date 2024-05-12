@@ -1,4 +1,3 @@
-
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
@@ -23,8 +22,7 @@ body {
     background-color: #EDEDED;
     font-family: "Inter Tight", sans-serif;
     color: #4A4A4A;
-    font-optical-sizing: auto;
-    line-height: 1.5;
+    line-height: 1.5rem;
 }
 
 /* TYPOGRAPHY 
@@ -39,19 +37,22 @@ h1 {
 
 .h1-caption {
     margin-top: 0;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
     font-size: 1.3rem;
 }
 
+h2 {
+    margin-top: 3rem;
+    text-align: center;
+}
+
 p {
-    line-height: 1.5rem;
     font-size: 1.1rem;
 }
 
 @media (min-width: 43.75rem) {
     h1 {
         font-size: 2.5rem;
-        /* margin-bottom: 2rem; */
     }
     .h1-caption {
         font-size: 1.8rem;
@@ -64,6 +65,7 @@ p {
 
     h2 {
         font-size: 3rem;
+        margin-top: 6rem;
     }
 
 @media (min-width: 62.5rem) {
@@ -83,43 +85,32 @@ p {
 
 /* ELEMENTS 
 ------------------------------*/
-
+/* test */
 
 /* LINKS 
 ------------------------------*/
+
 a {
+    display: inline-block;
     text-decoration: none;
     color: #4A4A4A;
+    padding: 0.1rem 0.25rem;
 }
 
-
-
-/* 
-a,
-a:visited { 
-	color: 
-	text-decoration: 
-/* } */
+@media (min-width: 43.75rem) {
+   a {
+    padding: 0.8rem 1rem;
+   }
+}
 
 .logo:hover {
     color: #AF4912;
 }
 .nav-header li:hover , 
 .nav-header li:active {
-	color: #4A4A4A;
-    border: solid #D3D3D3;
     background-color: #D3D3D3;
     border-radius: 2.5rem;
-    padding: 0 0.5rem;
-}
-
-a:focus {
-	outline: solid #AF4912;
-    outline-width: 0.2rem;
-}
-
-a:active {
-    outline: none;
+    
 }
 
 .project-link:hover,
@@ -129,7 +120,6 @@ a:active {
     border-radius: 2.5rem;
     background-color: #EDEDED;
     color: #4A4A4A;
-    outline: none;
 }
 
 .social-link:hover,
@@ -138,21 +128,24 @@ a:active {
     background-color: #4A4A4A;
     color: #EDEDED;
     border-radius: 2.5rem;
-    outline: none;
 }
 
+a:focus-visible {
+    outline: solid #AF4912;
+    outline-width: 0.2rem;  
+}
 
 /*--------------------------------------------------------------
 # Components
 --------------------------------------------------------------*/
 
-/* Site Header */
+/* HEADER
+------------------------------*/
+
 .site-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 1 0.5rem;
-
 }
 
 .logo {
@@ -163,11 +156,11 @@ a:active {
     margin-left: 0.5rem;
 }
 
-
 .nav-header ul {
     display: flex;
-    gap: 0.5rem; 
+    gap: 0.3rem; 
     margin-right: 0.5rem;
+    padding-left: 0;
 
 } 
 
@@ -176,25 +169,27 @@ a:active {
     font-size: 1.2rem;
 }
 
-
 @media (min-width: 43.75em) {
 
     .logo {
         font-size: 3rem;
-        margin-left: 1rem;
+        margin-left: 0;
     }
 
-    .nav-header ul {
-        gap: 2rem; 
-        margin-right: 2rem;
-    
-    } 
-    
+    .site-header {
+        margin-top: 0.5rem;
+    }
+
     .nav-header li {
         font-size: 2rem;
     }
 
 }
+
+/* MAIN 
+------------------------------*/
+
+/* Page Header/Banner */
 
 .page-header {
     margin: 0 auto;
@@ -212,6 +207,7 @@ a:active {
     max-width: 60%;
     margin: 0 auto;
 }
+
 .skill {
     margin-top: 0.5rem;
     padding: 0 3rem
@@ -219,11 +215,11 @@ a:active {
 
 .skill li {
     display: inline-block;
-    padding: .0625rem 0.6rem;
+    padding: 0.0625rem 0.6rem;
     margin: .0938rem 0;
     border:solid #d3d3d3;
     background-color: #d3d3d3;
-    color: #5a5a5a;
+    color: #3D3D3D;
     border-width: .0938rem;
     border-radius: 2.5rem;
     font-size: 1rem;
@@ -235,12 +231,11 @@ a:active {
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
-        /* gap: 5rem; */
-        /* margin: 10rem 5rem 15rem 5rem; */
         margin: 5rem auto;
         padding: 1rem;
 
     }
+
     .page-header img {
         max-height: 25rem;
         margin: 0;
@@ -253,39 +248,34 @@ a:active {
     .skill {
         padding: 0;
     }
-    /* .skill ul {
-        text-align:left;
-    } */
 
+   
 @media (min-width: 62.5rem) {
     
     .page-header {
         padding: 0;
         margin-top: 10rem;
-        margin-bottom: 10rem;
-        /* gap: 8rem; */ 
-        /* test gap later */
+        margin-bottom: 15rem;
     }
 }
 
 }
 
- 
+/* About */
 
 .section-about {
     padding: 0 2rem;
 }
-.section-about h2 {
-    text-align: center;
-}
 
 @media (min-width: 43.75em) {
     .section-about {
-        max-width: 50%;
+        max-width: 70%;
 		margin: 0 auto;
     }
 
 }
+
+/* Projects */
 
 .project {
     background-color: #d3d3d3;
@@ -294,9 +284,6 @@ a:active {
     margin: 1rem 1rem;
     width: fit-content;
 
-}
-.section-projects h2 {
-    text-align: center;
 }
 
 .project-image {
@@ -320,6 +307,7 @@ a:active {
 }
 
 @media (min-width: 43.75em) {
+
     .projects-wrapper {
         display: flex;
         flex-wrap: wrap;
@@ -331,12 +319,12 @@ a:active {
 
 }
 
+/* Contact */
+
 .section-contact {
     text-align: center;
     margin-top: 5rem;
 }
-
-    
 
 .contact-btn {
     align-items: center;
@@ -349,22 +337,31 @@ a:active {
 } 
 
 .social-link {
-    display: inline-block;
-    padding: .0625rem 0.6rem;
+    /* display: inline-block; */
+    padding: 0.5rem 1rem;
     margin: .0938rem 0;
     font-size: 1.2rem;
-    border:solid #4A4A4A;
+    border: solid #4A4A4A;
     color: #4A4A4A;
     border-radius: 2.5rem;
 }
 
+@media (min-width: 43.75rem) {
+    .social-link {
+        font-size: 1.7rem;
+    }
+}
+
+/* FOOTER 
+------------------------------*/
+
 footer {
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 3rem;
     background-color: #4A4A4A;
     color: #EDEDED;
-    padding: 1rem;
+    padding: 0.5rem;
 }
 
 
