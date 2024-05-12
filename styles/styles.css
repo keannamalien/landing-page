@@ -85,7 +85,6 @@ p {
 
 /* ELEMENTS 
 ------------------------------*/
-/* test */
 
 /* LINKS 
 ------------------------------*/
@@ -337,7 +336,6 @@ a:focus-visible {
 } 
 
 .social-link {
-    /* display: inline-block; */
     padding: 0.5rem 1rem;
     margin: .0938rem 0;
     font-size: 1.2rem;
